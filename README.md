@@ -1,5 +1,5 @@
 # ToDoApp
-# summary   
+# Table of Content  
 - [Overview](#Overview)
 - [the application interface](#the-application-interface)
 - [Defining a Task](#Defining-a-Tasks)
@@ -382,7 +382,7 @@ now lets make another version of the ToDoApp but now using models
    - Save :
   ```cpp
    void ToDoApp::closeEvent(QCloseEvent* e){
-    QFile file("C:/Users/zakariae zaoui/Desktop/alo.txt");
+    QFile file("C:/Users/hammouda/Desktop/save.txt");
     if(file.open(QIODevice::ReadWrite | QIODevice::Text)){
         QTextStream out(&file);
         for(int i=0;i<Todaytasks.size();i++)
